@@ -6,46 +6,57 @@
   </head>
 
   <body>
-    <h2>Contact Form</h2>
-    <form action="https://formspree.io/dashohoxha@gmail.com" method="POST">
+    <h2>Fill the form and send it</h2>
 
-      <table width="450px">
+    <form action="https://formspree.io/dashohoxha@gmail.com" method="POST">
+      <table>
         <tr>
-          <td><label for="first_name">First Name:</label></td>
+          <td><label for="full_name">Your Name:</label></td>
           <td>
-            <input type="text" name="first_name" maxlength="50" size="30">
+            <input type="text" name="full_name" maxlength="50" size="30">
           </td>
         </tr>
+
         <tr>
-          <td><label for="last_name">Last Name:</label></td>
+          <td><label for="email">Email:</label></td>
           <td>
-            <input type="text" name="last_name" maxlength="50" size="30">
+            <input type="text" name="email" maxlength="50" size="30">
           </td>
         </tr>
+
         <tr>
-          <td><label for="email">Email Address:</label></td>
+          <td valign="top">Want a reply?</td>
           <td>
-            <input type="text" name="email" maxlength="80" size="30">
+            <input type="radio" name="want_reply" value="sure">Sure!<br/>
+            <input type="radio" name="want_reply" value="nope">Nope.
           </td>
         </tr>
+
         <tr>
-          <td><label for="telephone">Telephone Number:</label></td>
+          <td valign="top">Reply by:</td>
           <td>
-            <input type="text" name="telephone" maxlength="30" size="30">
+            <input type="checkbox" name="reply_by_email">
+            <label for="reply_by_email">Email</label>
+            <br/>
+            <input type="checkbox" name="reply_by_phone">
+            <label for="reply_by_phone">Phone</label>
           </td>
         </tr>
+
         <tr>
           <td valign="top">
-            <label for="comments">Comments:</label>
+            <label for="message">Message:</label>
           </td>
           <td>
-            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+            <textarea name="message" maxlength="1000" cols="25" rows="6"></textarea>
           </td>
         </tr>
+
         <tr>
           <td></td>
           <td>
             <input type="submit" value="Send">
+            <input type="reset" value="Clear">
           </td>
         </tr>
       </table>
