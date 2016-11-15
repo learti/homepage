@@ -1,15 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-</head>
-<body>
-	<form action="https://formspree.io/dashohoxha@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+
+  <body>
+    <h2>Contact Form</h2>
+    <form action="https://formspree.io/dashohoxha@gmail.com" method="POST">
+
+      <table width="450px">
+        <tr>
+          <td><label for="first_name">First Name:</label></td>
+          <td>
+            <input type="text" name="first_name" maxlength="50" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="last_name">Last Name:</label></td>
+          <td>
+            <input type="text" name="last_name" maxlength="50" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email Address:</label></td>
+          <td>
+            <input type="text" name="email" maxlength="80" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="telephone">Telephone Number:</label></td>
+          <td>
+            <input type="text" name="telephone" maxlength="30" size="30">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <label for="comments">Comments:</label>
+          </td>
+          <td>
+            <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Send">
+          </td>
+        </tr>
+      </table>
+
+    </form>
+  </body>
 </html>
